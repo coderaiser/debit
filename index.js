@@ -3,13 +3,15 @@
     
     var http        = require('http'),
         express     = require('express'),
-        debitoor    = require('debitoor'),
+        router      = require('./lib/router'),
         app         = express(),
         server      = http.createServer(app),
         
         PORT        = 1337,
         IP          = '0.0.0.0';
     
-    app.use(express.static(__dirname + '/assets'));
+    app .use(router)
+        .use(express.static(__dirname + '/assets'));
+    
     server.listen(PORT, IP);
 })();
