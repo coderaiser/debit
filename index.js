@@ -10,6 +10,6 @@
         PORT        = 1337,
         IP          = '0.0.0.0';
     
-    app.use(express.static(__dirname));
+    app.use(express.static(__dirname + '/assets'));
     server.listen(PORT, IP);
 })();
