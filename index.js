@@ -8,10 +8,13 @@
         server      = http.createServer(app),
         
         PORT        = 1337,
-        IP          = '0.0.0.0';
+        IP          = '0.0.0.0',
+        MSG         = ['http://', IP, ':', PORT].join('');
     
     app .use(router)
         .use(express.static(__dirname + '/assets'));
     
     server.listen(PORT, IP);
+    
+    console.log(MSG);
 })();
