@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/coderaiser/debit",
   "dependencies": {
+    "csv": "^0.4.0",
     "debitoor": "0.0.2",
-    "express": "^4.9.5"
+    "express": "^4.9.5",
+    "handlebars": "^2.0.0",
+    "multer": "^0.1.4"
   }
 }
