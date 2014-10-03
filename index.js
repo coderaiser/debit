@@ -3,7 +3,6 @@
     
     var http        = require('http'),
         express     = require('express'),
-        multer      = require('multer'),
         router      = require('./lib/router'),
         
         app         = express(),
@@ -13,8 +12,7 @@
         IP          = '0.0.0.0',
         MSG         = ['http://', IP, ':', PORT].join('');
     
-    app .use(multer())
-        .use(router)
+    app .use(router)
         .use(express.static(__dirname + '/assets'));
     
     server.listen(PORT, IP);

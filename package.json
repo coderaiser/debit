@@ -18,9 +18,10 @@
   "homepage": "https://github.com/coderaiser/debit",
   "dependencies": {
     "csv-parse": "0.0.6",
-    "debitoor": "0.0.2",
     "express": "^4.9.5",
     "handlebars": "^2.0.0",
-    "multer": "^0.1.4"
+    "multer": "^0.1.4",
+    "pipe-io": "^0.9.6",
+    "util-io": "^1.4.0"
   }
 }
