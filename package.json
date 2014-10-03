@@ -19,9 +19,9 @@
   "dependencies": {
     "csv-parse": "0.0.6",
     "express": "^4.9.5",
+    "formidable": "^1.0.15",
     "handlebars": "^2.0.0",
     "multer": "^0.1.4",
-    "pipe-io": "^0.9.6",
     "request": "^2.44.0",
     "util-io": "^1.4.0"
   }
