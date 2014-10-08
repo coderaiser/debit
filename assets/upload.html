@@ -1,12 +1,17 @@
 <!doctype html>
 <html>
     <head>
-        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <form method="POST" action="/upload?code={{ token }}" enctype="multipart/form-data">
-            <input type="file" name="file" data-name="js-upload-file-button">
-            <input type="submit">
-        </form>
+    <div class="jumbotron">
+            <div class="container">
+                <form method="POST" action="/upload?code={{ token }}" enctype="multipart/form-data">
+                    <input type="file" name="file" data-name="js-upload-file-button" class="form-control btn btn-success btn-lg width-full height-full font-big">
+                    <input type="submit" class="form-control btn btn-success btn-lg width-full height-full font-big">
+                </form>
+            </div>
+        </div>
     </body>
 </html>
