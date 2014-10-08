@@ -5,13 +5,18 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-    <div class="jumbotron">
+        <div class="jumbotron">
             <div class="container">
-                <form method="POST" action="/upload?code={{ token }}" enctype="multipart/form-data">
+                <form data-name="js-form" method="POST" action="/upload?code={{ token }}" enctype="multipart/form-data">
                     <input type="file" name="file" data-name="js-upload-file-button" class="form-control btn btn-success btn-lg width-full height-full font-big">
-                    <input type="submit" class="form-control btn btn-success btn-lg width-full height-full font-big">
+                    <input data-name="js-submit" type="submit" class="form-control btn btn-success btn-lg width-full height-full font-big">
                 </form>
             </div>
         </div>
+        
+        <div data-name="js-result" class="hide alert alert-success">
+            
+        </div>
+        <script src ="/js/upload.js"></script>
     </body>
 </html>

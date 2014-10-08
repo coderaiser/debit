@@ -9,3 +9,7 @@
 .font-big {
     font-size: 24px;
 }
+
+.hide {
+    visibility: hidden;
+}
