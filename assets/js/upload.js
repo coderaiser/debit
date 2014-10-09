@@ -27,7 +27,6 @@
     function show(data) {
         var el = document.querySelector('[data-name="js-result"]');
         
-        el.classList.remove('hide');
         el.innerText = data;
     }
     
