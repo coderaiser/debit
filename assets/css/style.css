@@ -13,3 +13,11 @@
 .hide {
     visibility: hidden;
 }
+
+.logo {
+    margin: 3%;
+}
+
+.jumbotron {
+    margin: 20%;
+}
