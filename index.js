@@ -3,6 +3,7 @@
     
     var http        = require('http'),
         express     = require('express'),
+        minify      = require('minify'),
         router      = require('./lib/router'),
         
         app         = express(),
@@ -10,10 +11,15 @@
         
         PORT        = 1337,
         IP          = '0.0.0.0',
-        MSG         = ['http://', IP, ':', PORT].join('');
+        MSG         = ['http://', IP, ':', PORT].join(''),
+        
+        DIR         = __dirname + '/assets';
     
     app .use(router)
-        .use(express.static(__dirname + '/assets'));
+        .use(minify({
+            dir: DIR
+        }))
+        .use(express.static(DIR));
     
     server.listen(PORT, IP);
     
