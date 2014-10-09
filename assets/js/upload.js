@@ -3,8 +3,12 @@
     
     var href        = window.location.href,
         request     = new XMLHttpRequest(),
+        uploadEl    = document.querySelector('[data-name="js-upload"]'),
         submitEl    = document.querySelector('[data-name="js-submit"]');
-        
+    
+    uploadEl.addEventListener('change', function() {
+        submitEl.disabled = !uploadEl.value;
+    });
     
     submitEl.addEventListener('click', function(event) {
         var formElement = document.querySelector('[data-name="js-form"]'),
