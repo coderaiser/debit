@@ -6,6 +6,8 @@
     </head>
     <body>
         <div class="jumbotron">
+            <div data-name="js-result" class="hide alert alert-success"></div>
+            
             <div class="container">
                 <form data-name="js-form" method="POST" action="/upload?code={{ token }}" enctype="multipart/form-data">
                     <input type="file" name="file" data-name="js-upload" class="form-control btn btn-success btn-lg width-full height-full font-big">
@@ -14,9 +16,6 @@
             </div>
         </div>
         
-        <div data-name="js-result" class="hide alert alert-success">
-            
-        </div>
         <script src ="/js/upload.js"></script>
     </body>
 </html>
