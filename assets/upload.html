@@ -6,13 +6,28 @@
     </head>
     <body>
         <div class="jumbotron">
-            <div data-name="js-result" class="alert alert-success"></div>
+            <div data-name="js-result" class="alert alert-success reduce-text"></div>
             
             <div class="container">
                 <form data-name="js-form" method="POST" action="/upload?code={{ token }}" enctype="multipart/form-data">
                     <input type="file" name="file" data-name="js-upload" class="form-control btn btn-success btn-lg width-full height-full font-big">
                     <input data-name="js-submit" type="submit" disabled class="form-control btn btn-success btn-lg width-full height-full font-big">
                 </form>
+                
+                <svg data-name="js-load" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64" fill="#5cb85c" class="load hiden">
+                    <circle transform="translate(8 0)" cx="0" cy="16" r="0"> 
+                        <animate attributeName="r" values="0; 4; 0; 0" dur="1.2s" repeatCount="indefinite" begin="0"
+                        keytimes="0;0.2;0.7;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.6 0.4 0.8" calcMode="spline" />
+                    </circle>
+                    <circle transform="translate(16 0)" cx="0" cy="16" r="0"> 
+                        <animate attributeName="r" values="0; 4; 0; 0" dur="1.2s" repeatCount="indefinite" begin="0.3"
+                        keytimes="0;0.2;0.7;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.6 0.4 0.8" calcMode="spline" />
+                    </circle>
+                    <circle transform="translate(24 0)" cx="0" cy="16" r="0"> 
+                        <animate attributeName="r" values="0; 4; 0; 0" dur="1.2s" repeatCount="indefinite" begin="0.6"
+                        keytimes="0;0.2;0.7;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.6 0.4 0.8;0.2 0.6 0.4 0.8" calcMode="spline" />
+                    </circle>
+                    </svg>
             </div>
         </div>
         

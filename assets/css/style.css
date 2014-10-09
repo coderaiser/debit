@@ -17,3 +17,17 @@
 .jumbotron {
     margin: 20%;
 }
+
+.reduce-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.hiden {
+    visibility: hidden;
+}
+
+.load {
+    float: right;
+}
