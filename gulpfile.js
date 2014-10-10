@@ -10,7 +10,7 @@
            .on('error', onError);
     });
     
-    function onError(params) {
-        console.log(params.message);
+    function onError(error) {
+        console.log(error.message);
     }
 })();
