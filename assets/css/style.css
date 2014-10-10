@@ -10,12 +10,20 @@
     font-size: 24px;
 }
 
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
 .logo {
     margin: 3%;
+    width: 95%;
+    height: 95%;
 }
 
 .jumbotron {
-    margin: 20%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 5%;
 }
 
 .reduce-text {
