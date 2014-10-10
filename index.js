@@ -9,7 +9,7 @@
         app         = express(),
         server      = http.createServer(app),
         
-        PORT        = 1337,
+        PORT        = 9876,
         IP          = '0.0.0.0',
         MSG         = ['http://', IP, ':', PORT].join(''),
         
