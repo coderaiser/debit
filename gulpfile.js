@@ -10,6 +10,8 @@
            .on('error', onError);
     });
     
+    gulp.task('default', ['test']);
+    
     function onError(error) {
         console.log(error.message);
     }
