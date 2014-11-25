@@ -1,6 +1,6 @@
 {
   "name": "debit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "debit server",
   "main": "index.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/coderaiser/debit",
   "dependencies": {
+    "checkup": "^1.0.2",
     "csv-parse": "0.0.6",
     "express": "^4.9.5",
     "formidable": "^1.0.15",
