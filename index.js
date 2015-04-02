@@ -3,7 +3,7 @@
     
     var http        = require('http'),
         express     = require('express'),
-        minify      = require('minify'),
+        mollify     = require('mollify'),
         router      = require('./lib/router'),
         
         app         = express(),
@@ -14,7 +14,7 @@
         DIR         = __dirname + '/assets';
     
     app .use(router)
-        .use(minify({
+        .use(mollify({
             dir: DIR
         }))
         .use(express.static(DIR));
