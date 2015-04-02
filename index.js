@@ -11,8 +11,6 @@
         
         PORT        = 9876,
         IP          = '0.0.0.0',
-        MSG         = ['http://', IP, ':', PORT].join(''),
-        
         DIR         = __dirname + '/assets';
     
     app .use(router)
@@ -23,5 +21,5 @@
     
     server.listen(PORT, IP);
     
-    console.log(MSG);
+    console.log('http://%s:%d', IP, PORT);
 })();
