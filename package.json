@@ -2,10 +2,11 @@
   "name": "debit",
   "version": "1.0.2",
   "description": "debit server",
-  "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "debit": "bin/debit.js",
+    "start": "node bin/debit.js"
   },
   "repository": {
     "type": "git",

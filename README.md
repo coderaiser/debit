@@ -11,7 +11,8 @@ Customers and send them invoices.
 ## Start
 
 ```
-> node index.js
+git clone https://github.com/coderaiser/debit.git
+npm start
 > http://0.0.0.0:9876
 ```
 
