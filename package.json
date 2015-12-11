@@ -27,7 +27,7 @@
     "formidable": "^1.0.15",
     "handlebars": "^2.0.0",
     "mollify": "~1.0.4",
-    "multer": "^0.1.4",
+    "multer": "^1.1.0",
     "request": "^2.44.0"
   },
   "devDependencies": {
