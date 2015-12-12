@@ -1,3 +1,16 @@
+2015.12.12, v1.0.3
+
+feature:
+- (debit) index -> bin/debit
+- (package) handlerbarse v4.0.5
+- (package) multer v1.1.0
+- (package) debug v2.2.0
+- (package) csv-parse v1.0.1
+- (package) babyparse v0.4.3
+- (package) async v1.5.0
+- (package) gulp -> mocha
+
+
 2015.04.02, v1.0.2
 
 feature:
