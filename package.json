@@ -1,6 +1,6 @@
 {
   "name": "debit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "debit server",
   "private": true,
   "scripts": {
