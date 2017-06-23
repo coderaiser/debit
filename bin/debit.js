@@ -6,11 +6,11 @@ var http = require('http');
 var express = require('express');
 var mollify = require('mollify');
 var router = require('../lib/router');
-    
+
 var app = express();
 var server = http.createServer(app);
 
-var PORT = 9876;
+var PORT = process.env.PORT || 9876;
 var IP = '0.0.0.0';
 var DIR = __dirname + '/../assets';
 
