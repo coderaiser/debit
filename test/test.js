@@ -1,26 +1,21 @@
-(function() {
-    'use strict';
-    
-    /*global describe, it */
-    
-    var fs      = require('fs'),
-        should  = require('should'),
-        parse   = require('../lib/parse'),
-        test    = fs.readFileSync(__dirname + '/test.json', {encoding: 'utf8'});
-    
-    describe('Debit', function() {
-        describe('parse', function() {
-            it('should parse cvs to json', function() {
-                parse(__dirname + '/test.cvs', function(error, data) {
-                    var json;
-                    
-                    if (!error)
-                        json = JSON.stringify(data);
-                    
-                    should(json).eql(test);
-                });
+'use strict';
+
+/*global describe, it */
+
+const fs = require('fs');
+const should = require('should');
+const parse = require('../lib/parse');
+const test = fs.readFileSync(__dirname + '/test.json', {encoding: 'utf8'});
+
+describe('Debit', () => {
+    describe('parse', () => {
+        it('should parse cvs to json', () => {
+            parse(__dirname + '/test.cvs', (error, data) => {
+                const json = JSON.stringify(data);
+                
+                should(json).eql(test);
             });
         });
     });
-    
-})();
+});
+
