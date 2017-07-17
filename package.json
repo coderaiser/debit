@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/coderaiser/debit",
   "dependencies": {
-    "async": "^2.0.0-rc.1",
+    "async": "^2.0.0",
     "babyparse": "^0.4.3",
     "checkup": "^1.0.2",
     "csv-parse": "^1.0.1",
