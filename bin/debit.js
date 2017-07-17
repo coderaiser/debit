@@ -4,7 +4,6 @@
 
 var http = require('http');
 var express = require('express');
-var mollify = require('mollify');
 var router = require('../lib/router');
 
 var app = express();
@@ -15,9 +14,6 @@ var IP = '0.0.0.0';
 var DIR = __dirname + '/../assets';
 
 app .use(router)
-    .use(mollify({
-        dir: DIR
-    }))
     .use(express.static(DIR));
 
 server.listen(PORT, IP);

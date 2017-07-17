@@ -27,7 +27,6 @@
     "express": "^4.9.5",
     "formidable": "^1.0.15",
     "handlebars": "^4.0.5",
-    "mollify": "~1.0.4",
     "multer": "^1.1.0",
     "request": "^2.44.0"
   },
